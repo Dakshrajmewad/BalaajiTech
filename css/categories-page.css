@@ -1,0 +1,296 @@
+/* Categories Page Specific Styles */
+
+/* Hero Section */
+.categories-hero {
+  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.categories-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.categories-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.categories-hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main Categories Section */
+.main-categories {
+  padding: 3rem 0;
+  background-color: var(--background);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.category-card-image {
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.category-card:hover .category-card-image img {
+  transform: scale(1.05);
+}
+
+.category-icon {
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.1);
+}
+
+.category-card-content {
+  padding: 1.5rem;
+  padding-top: 1rem;
+}
+
+.category-card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--foreground);
+}
+
+.category-card-content p {
+  color: var(--muted-foreground);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.category-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+
+.product-count {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+}
+
+.view-more {
+  font-size: 0.875rem;
+  color: var(--primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.view-more i {
+  transition: transform 0.3s;
+}
+
+.category-card:hover .view-more i {
+  transform: translateX(3px);
+}
+
+/* Category Features Section */
+.category-features {
+  padding: 3rem 0;
+  background-color: var(--muted);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+}
+
+/* Age Recommendations Section */
+.age-recommendations {
+  padding: 3rem 0;
+  background-color: var(--background);
+}
+
+.age-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.age-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.age-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.age-header {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.age-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.age-content {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.age-category-list {
+  margin-bottom: 1rem;
+}
+
+.age-category-list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.age-category-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.age-category-list a {
+  color: var(--foreground);
+  transition: color 0.2s;
+}
+
+.age-category-list a:hover {
+  color: var(--primary);
+}
+
+.age-content p {
+  font-size: 0.9rem;
+  color: var(--muted-foreground);
+  margin-bottom: 1.25rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .categories-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid, .age-groups {
+    grid-template-columns: 1fr;
+  }
+}

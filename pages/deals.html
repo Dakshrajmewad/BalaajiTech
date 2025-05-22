@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Deals - Balaji Tech Toys</title>
+  <meta name="description" content="Shop our special deals and discounts on educational and tech toys. Limited-time offers on quality toys at Balaji Tech Toys.">
+  
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/deals.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../index.html">
+            <span class="logo-text">Balaji<span class="logo-highlight">Tech</span></span>
+          </a>
+        </div>
+        
+        <!-- Search Bar - Desktop -->
+        <div class="search-bar desktop">
+          <form id="search-form">
+            <input type="text" placeholder="Search for toys..." id="search-input">
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="deals.html" class="active">Special Deals</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Icons -->
+        <div class="mobile-icons">
+          <button id="search-toggle" class="icon-button">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="cart.html" class="icon-button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <button id="menu-toggle" class="icon-button">
+            <i class="fas fa-bars" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Search Bar -->
+      <div class="search-bar mobile" id="mobile-search">
+        <form>
+          <input type="text" placeholder="Search for toys...">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Deals Hero Section -->
+    <section class="deals-hero">
+      <div class="container">
+        <div class="deals-hero-content">
+          <h1 class="animate-on-scroll" data-animation="slide-up">Special Deals</h1>
+          <p class="animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            Explore our best deals and save big on educational toys.
+            Limited-time offers on premium quality toys for your little ones.
+          </p>
+          <div class="deals-countdown animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="countdown-label">Flash Sale Ends In:</div>
+            <div class="countdown-timer" id="countdown-timer">
+              <div class="countdown-item">
+                <span id="days">00</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <div class="countdown-item">
+                <span id="hours">00</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <div class="countdown-item">
+                <span id="minutes">00</span>
+                <span class="countdown-label">Mins</span>
+              </div>
+              <div class="countdown-item">
+                <span id="seconds">00</span>
+                <span class="countdown-label">Secs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Top Offers</h2>
+        <div class="offers-container">
+          <div class="offer-card animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            <div class="offer-badge">30% OFF</div>
+            <div class="offer-content">
+              <h3>First Purchase Discount</h3>
+              <p>Get 30% off on your first purchase! Use code:</p>
+              <div class="promo-code">WELCOME30</div>
+              <button class="btn btn-primary copy-code-btn" data-code="WELCOME30">Copy Code</button>
+            </div>
+          </div>
+          
+          <div class="offer-card animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="offer-badge">Free</div>
+            <div class="offer-content">
+              <h3>Free Shipping</h3>
+              <p>Free shipping on all orders above ₹999!</p>
+              <div class="promo-code">FREESHIP</div>
+              <button class="btn btn-primary copy-code-btn" data-code="FREESHIP">Copy Code</button>
+            </div>
+          </div>
+          
+          <div class="offer-card animate-on-scroll" data-animation="slide-up" data-delay="0.3s">
+            <div class="offer-badge">Buy 2</div>
+            <div class="offer-content">
+              <h3>Buy 2 Get 1 Free</h3>
+              <p>Buy any 2 science kits and get 1 free!</p>
+              <div class="promo-code">B2G1FREE</div>
+              <button class="btn btn-primary copy-code-btn" data-code="B2G1FREE">Copy Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deal of the Day -->
+    <section class="deal-of-the-day">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Deal of the Day</h2>
+        <div class="featured-deal animate-on-scroll" data-animation="fade-in">
+          <div class="featured-deal-container">
+            <div class="featured-deal-image">
+              <img src="../images/products/robot.jpg" alt="RC Smart Robot Toy">
+              <span class="product-badge badge-sale">Sale</span>
+            </div>
+            <div class="featured-deal-content">
+              <h3>RC Smart Robot Toy</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span class="review-count">(124 reviews)</span>
+              </div>
+              <p class="product-description">
+                This advanced RC Robot Toy combines fun with learning. It can be programmed using a simple app, 
+                teaching children the basics of coding while they play. With voice commands, touch sensors, 
+                and programmable movements, this robot provides endless entertainment.
+              </p>
+              <div class="product-price">
+                <span class="current-price">₹1,499</span>
+                <span class="original-price">₹1,999</span>
+                <span class="discount-tag">25% OFF</span>
+              </div>
+              <div class="deal-timer">
+                <div class="timer-label">Offer ends in:</div>
+                <div class="timer-value" id="deal-timer">12:45:30</div>
+              </div>
+              <button class="btn btn-primary featured-buy-button">
+                <i class="fab fa-whatsapp"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discounted Products Grid -->
+    <section class="discounted-products">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">All Deals</h2>
+        
+        <!-- Sorting and Filtering -->
+        <div class="filter-options animate-on-scroll" data-animation="fade-in">
+          <div class="filter-dropdown">
+            <label for="discount-filter">Filter By:</label>
+            <select id="discount-filter" class="filter-select">
+              <option value="all">All Discounts</option>
+              <option value="10">10% & Above</option>
+              <option value="20">20% & Above</option>
+              <option value="30">30% & Above</option>
+            </select>
+          </div>
+          <div class="filter-dropdown">
+            <label for="sort-filter">Sort By:</label>
+            <select id="sort-filter" class="filter-select">
+              <option value="discount-high">Highest Discount</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="popularity">Popularity</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Products Grid -->
+        <div class="products-grid" id="deals-products-grid">
+          <!-- Products will be loaded here via JavaScript -->
+          <div class="product-loading">Loading special deals...</div>
+        </div>
+        
+        <!-- Load More Button -->
+        <div class="load-more">
+          <button id="load-more-btn" class="btn btn-outline">Load More Deals</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limited Time Offers -->
+    <section class="limited-offers">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Limited Time Offers</h2>
+        <div class="limited-offers-banner animate-on-scroll" data-animation="fade-in">
+          <div class="limited-offer-content">
+            <h3>Flash Sale!</h3>
+            <p>Get flat 40% off on all educational board games this weekend only!</p>
+            <button class="btn btn-accent">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="customer-reviews">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Happy Customers</h2>
+        <div class="reviews-container">
+          <div class="review-card animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-content">"I bought the RC Robot Toy on sale and my son absolutely loves it! It's durable, easy to use, and the app is very intuitive. Great value for money!"</p>
+            <div class="review-author">
+              <div class="author-avatar bg-primary-light text-primary">SM</div>
+              <div class="author-details">
+                <h4>Suresh Mehta</h4>
+                <p>Purchased RC Smart Robot Toy</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="review-card animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="review-content">"The magnetic tiles building set was a steal at the discounted price. My kids spend hours creating different structures. The quality is excellent and the colors are vibrant."</p>
+            <div class="review-author">
+              <div class="author-avatar bg-secondary-light text-secondary">PA</div>
+              <div class="author-details">
+                <h4>Priya Agarwal</h4>
+                <p>Purchased Magnetic Tiles Building Set</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="review-card animate-on-scroll" data-animation="slide-up" data-delay="0.3s">
+            <div class="review-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="review-content">"The solar system model was worth every rupee, even at full price. But getting it at a discount was amazing! The LED sun and motorized planets have captivated my daughter's interest in astronomy."</p>
+            <div class="review-author">
+              <div class="author-avatar bg-accent-light text-accent">RK</div>
+              <div class="author-details">
+                <h4>Rahul Kumar</h4>
+                <p>Purchased Interactive Solar System Model</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Balaji<span class="text-secondary">Tech</span></h3>
+          <p>Premium toys that combine learning with fun for your little ones.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Robotics">Robotics</a></li>
+            <li><a href="products.html?category=Board%20Games">Board Games</a></li>
+            <li><a href="products.html?category=Building%20Blocks">Building Blocks</a></li>
+            <li><a href="products.html?category=RC%20Toys">RC Toys</a></li>
+            <li><a href="products.html?category=Art%20%26%20Craft">Art & Craft</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone-alt text-secondary"></i>
+              <a href="tel:+919265736761">+91 92657 36761</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope text-secondary"></i>
+              <a href="mailto:info@balajitech.com">info@balajitech.com</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt text-secondary"></i>
+              <span>123 Main Street, Mumbai, Maharashtra, India - 400001</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Balaji Tech Toys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Product Details</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-product-details">
+          <!-- Product details will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/common.js"></script>
+  <script src="../js/products-data.js"></script>
+  <script src="../js/deals.js"></script>
+</body>
+</html>

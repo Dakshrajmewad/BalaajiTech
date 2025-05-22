@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Balaji Tech Toys</title>
+  <meta name="description" content="Get in touch with Balaji Tech Toys. Contact us for inquiries, support, or to place an order.">
+  
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contact-page.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../index.html">
+            <span class="logo-text">Balaji<span class="logo-highlight">Tech</span></span>
+          </a>
+        </div>
+        
+        <!-- Search Bar - Desktop -->
+        <div class="search-bar desktop">
+          <form id="search-form">
+            <input type="text" placeholder="Search for toys..." id="search-input">
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="deals.html">Special Deals</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Icons -->
+        <div class="mobile-icons">
+          <button id="search-toggle" class="icon-button">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="cart.html" class="icon-button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <button id="menu-toggle" class="icon-button">
+            <i class="fas fa-bars" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Search Bar -->
+      <div class="search-bar mobile" id="mobile-search">
+        <form>
+          <input type="text" placeholder="Search for toys...">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero-content">
+          <h1 class="animate-on-scroll" data-animation="slide-up">Contact Us</h1>
+          <p class="animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            Have questions about our products or need assistance with your order? 
+            Get in touch with our friendly support team.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form-container animate-on-scroll" data-animation="slide-right">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="product-inquiry">Product Inquiry</option>
+                  <option value="order-status">Order Status</option>
+                  <option value="return-exchange">Return or Exchange</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Contact Info -->
+          <div class="contact-info animate-on-scroll" data-animation="slide-left">
+            <h2>Contact Information</h2>
+            <div class="info-card">
+              <div class="info-item">
+                <div class="info-icon bg-primary-light text-primary">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Phone</h3>
+                  <a href="tel:+919265736761">+91 92657 36761</a>
+                  <p class="info-note">Mon-Sat: 9:00 AM - 6:00 PM IST</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon bg-secondary-light text-secondary">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Email</h3>
+                  <a href="mailto:info@balajitech.com">info@balajitech.com</a>
+                  <p class="info-note">We'll respond within 24 hours</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon bg-accent-light text-accent">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="info-content">
+                  <h3>WhatsApp</h3>
+                  <a href="https://wa.me/919265736761">+91 92657 36761</a>
+                  <p class="info-note">For quick responses and orders</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon bg-green-light text-green">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h3>Address</h3>
+                  <p>123 Main Street, Mumbai,<br>Maharashtra, India - 400001</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="social-connect">
+              <h3>Connect With Us</h3>
+              <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="map-container animate-on-scroll" data-animation="fade-in">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995646222!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1651149155843!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            <div class="faq-question">
+              <h3>How can I place an order?</h3>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>You can browse our products, click on the "Buy Now" button, and you'll be redirected to WhatsApp to complete your order. Alternatively, you can call us directly or send us an email with your requirements.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="faq-question">
+              <h3>What are your delivery timelines?</h3>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>We typically deliver within 3-5 business days across major cities in India. Remote locations may take 5-7 business days. Expedited shipping options are available at an additional cost.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item animate-on-scroll" data-animation="slide-up" data-delay="0.3s">
+            <div class="faq-question">
+              <h3>What is your return policy?</h3>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>We offer a 7-day return policy for products in their original condition and packaging. If you receive a defective item, please contact us within 48 hours of receiving your order, and we'll arrange for a replacement or refund.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item animate-on-scroll" data-animation="slide-up" data-delay="0.4s">
+            <div class="faq-question">
+              <h3>Do you offer warranty on your products?</h3>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, most of our products come with a 1-year warranty against manufacturing defects. Specific warranty information is mentioned in the product details. Batteries and consumable components typically have a shorter warranty period.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item animate-on-scroll" data-animation="slide-up" data-delay="0.5s">
+            <div class="faq-question">
+              <h3>What payment methods do you accept?</h3>
+              <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>We accept various payment methods including UPI, credit/debit cards, net banking, and cash on delivery (for orders under ₹2000). For WhatsApp orders, we'll provide payment instructions after confirming your order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Balaji<span class="text-secondary">Tech</span></h3>
+          <p>Premium toys that combine learning with fun for your little ones.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Robotics">Robotics</a></li>
+            <li><a href="products.html?category=Board%20Games">Board Games</a></li>
+            <li><a href="products.html?category=Building%20Blocks">Building Blocks</a></li>
+            <li><a href="products.html?category=RC%20Toys">RC Toys</a></li>
+            <li><a href="products.html?category=Art%20%26%20Craft">Art & Craft</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone-alt text-secondary"></i>
+              <a href="tel:+919265736761">+91 92657 36761</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope text-secondary"></i>
+              <a href="mailto:info@balajitech.com">info@balajitech.com</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt text-secondary"></i>
+              <span>123 Main Street, Mumbai, Maharashtra, India - 400001</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Balaji Tech Toys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="../js/common.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

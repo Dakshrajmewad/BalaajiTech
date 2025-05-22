@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - Balaji Tech Toys</title>
+  <meta name="description" content="Browse our categories of educational and tech toys. Find the perfect category for your child's interests and development needs.">
+  
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/categories-page.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../index.html">
+            <span class="logo-text">Balaji<span class="logo-highlight">Tech</span></span>
+          </a>
+        </div>
+        
+        <!-- Search Bar - Desktop -->
+        <div class="search-bar desktop">
+          <form id="search-form">
+            <input type="text" placeholder="Search for toys..." id="search-input">
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html" class="active">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="new-arrivals.html">New Arrivals</a></li>
+            <li><a href="deals.html">Special Deals</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Icons -->
+        <div class="mobile-icons">
+          <button id="search-toggle" class="icon-button">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="cart.html" class="icon-button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <button id="menu-toggle" class="icon-button">
+            <i class="fas fa-bars" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Search Bar -->
+      <div class="search-bar mobile" id="mobile-search">
+        <form>
+          <input type="text" placeholder="Search for toys...">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Categories Hero Section -->
+    <section class="categories-hero">
+      <div class="container">
+        <div class="categories-hero-content">
+          <h1 class="animate-on-scroll" data-animation="slide-up">Browse Categories</h1>
+          <p class="animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            Discover our wide range of educational and fun toys organized by category. 
+            Find the perfect toys for your child's interests and development needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Categories Section -->
+    <section class="main-categories">
+      <div class="container">
+        <div class="categories-grid" id="categories-grid">
+          <!-- Categories will be loaded here via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Features -->
+    <section class="category-features">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Why Shop by Category?</h2>
+        <div class="features-grid">
+          <div class="feature-card animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            <div class="feature-icon bg-primary-light">
+              <i class="fas fa-brain text-primary"></i>
+            </div>
+            <h3>Targeted Learning</h3>
+            <p>Each category focuses on developing specific skills in children, from motor skills to logical thinking.</p>
+          </div>
+          <div class="feature-card animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="feature-icon bg-secondary-light">
+              <i class="fas fa-child text-secondary"></i>
+            </div>
+            <h3>Age-Appropriate</h3>
+            <p>Our categories help you find toys that match your child's developmental stage and interests.</p>
+          </div>
+          <div class="feature-card animate-on-scroll" data-animation="slide-up" data-delay="0.3s">
+            <div class="feature-icon bg-amber-light">
+              <i class="fas fa-bullseye text-amber"></i>
+            </div>
+            <h3>Easy to Navigate</h3>
+            <p>Finding the perfect toy is simple when you can browse by specific interests and educational goals.</p>
+          </div>
+          <div class="feature-card animate-on-scroll" data-animation="slide-up" data-delay="0.4s">
+            <div class="feature-icon bg-green-light">
+              <i class="fas fa-gift text-green"></i>
+            </div>
+            <h3>Perfect Gifting</h3>
+            <p>Categories make it easy to find the ideal gift based on a child's known interests and preferences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Age-Based Recommendations -->
+    <section class="age-recommendations">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Shop by Age</h2>
+        <div class="age-groups">
+          <div class="age-card animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            <div class="age-header bg-primary">
+              <h3>3-5 Years</h3>
+            </div>
+            <div class="age-content">
+              <ul class="age-category-list">
+                <li><a href="products.html?category=Building%20Blocks">Building Blocks</a></li>
+                <li><a href="products.html?category=Art%20%26%20Craft">Art & Craft</a></li>
+                <li><a href="products.html?category=Board%20Games">Simple Board Games</a></li>
+              </ul>
+              <p>Focus on toys that develop fine motor skills and creative expression.</p>
+              <a href="products.html?age=3-5" class="btn btn-outline">View All</a>
+            </div>
+          </div>
+          
+          <div class="age-card animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="age-header bg-secondary">
+              <h3>6-8 Years</h3>
+            </div>
+            <div class="age-content">
+              <ul class="age-category-list">
+                <li><a href="products.html?category=Science%20Kits">Science Kits</a></li>
+                <li><a href="products.html?category=Board%20Games">Board Games</a></li>
+                <li><a href="products.html?category=RC%20Toys">RC Toys</a></li>
+              </ul>
+              <p>Introduce toys that encourage learning and following instructions.</p>
+              <a href="products.html?age=6-8" class="btn btn-outline">View All</a>
+            </div>
+          </div>
+          
+          <div class="age-card animate-on-scroll" data-animation="slide-up" data-delay="0.3s">
+            <div class="age-header bg-accent">
+              <h3>9-12 Years</h3>
+            </div>
+            <div class="age-content">
+              <ul class="age-category-list">
+                <li><a href="products.html?category=Robotics">Robotics</a></li>
+                <li><a href="products.html?category=Science%20Kits">Advanced Science Kits</a></li>
+                <li><a href="products.html?category=Board%20Games">Strategy Games</a></li>
+              </ul>
+              <p>Focus on toys that develop critical thinking and complex problem solving.</p>
+              <a href="products.html?age=9-12" class="btn btn-outline">View All</a>
+            </div>
+          </div>
+          
+          <div class="age-card animate-on-scroll" data-animation="slide-up" data-delay="0.4s">
+            <div class="age-header bg-purple">
+              <h3>12+ Years</h3>
+            </div>
+            <div class="age-content">
+              <ul class="age-category-list">
+                <li><a href="products.html?category=Robotics">Advanced Robotics</a></li>
+                <li><a href="products.html?category=Board%20Games">Complex Strategy Games</a></li>
+                <li><a href="products.html?category=Science%20Kits">Advanced Science Kits</a></li>
+              </ul>
+              <p>Choose toys that challenge teens with advanced concepts and skills.</p>
+              <a href="products.html?age=12+" class="btn btn-outline">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Balaji<span class="text-secondary">Tech</span></h3>
+          <p>Premium toys that combine learning with fun for your little ones.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Robotics">Robotics</a></li>
+            <li><a href="products.html?category=Board%20Games">Board Games</a></li>
+            <li><a href="products.html?category=Building%20Blocks">Building Blocks</a></li>
+            <li><a href="products.html?category=RC%20Toys">RC Toys</a></li>
+            <li><a href="products.html?category=Art%20%26%20Craft">Art & Craft</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone-alt text-secondary"></i>
+              <a href="tel:+919265736761">+91 92657 36761</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope text-secondary"></i>
+              <a href="mailto:info@balajitech.com">info@balajitech.com</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt text-secondary"></i>
+              <span>123 Main Street, Mumbai, Maharashtra, India - 400001</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Balaji Tech Toys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Product Details</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-product-details">
+          <!-- Product details will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/common.js"></script>
+  <script src="../js/products-data.js"></script>
+  <script src="../js/categories.js"></script>
+</body>
+</html>

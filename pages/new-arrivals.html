@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Arrivals - Balaji Tech Toys</title>
+  <meta name="description" content="Discover our latest educational and tech toys. Be the first to get your hands on our newest products at Balaji Tech Toys.">
+  
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/new-arrivals.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../index.html">
+            <span class="logo-text">Balaji<span class="logo-highlight">Tech</span></span>
+          </a>
+        </div>
+        
+        <!-- Search Bar - Desktop -->
+        <div class="search-bar desktop">
+          <form id="search-form">
+            <input type="text" placeholder="Search for toys..." id="search-input">
+            <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="new-arrivals.html" class="active">New Arrivals</a></li>
+            <li><a href="deals.html">Special Deals</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Mobile Icons -->
+        <div class="mobile-icons">
+          <button id="search-toggle" class="icon-button">
+            <i class="fas fa-search"></i>
+          </button>
+          <a href="cart.html" class="icon-button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <button id="menu-toggle" class="icon-button">
+            <i class="fas fa-bars" id="menu-icon"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Mobile Search Bar -->
+      <div class="search-bar mobile" id="mobile-search">
+        <form>
+          <input type="text" placeholder="Search for toys...">
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- New Arrivals Hero Section -->
+    <section class="new-arrivals-hero">
+      <div class="container">
+        <div class="new-arrivals-hero-content">
+          <h1 class="animate-on-scroll" data-animation="slide-up">New Arrivals</h1>
+          <p class="animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            Be the first to discover our latest educational and tech toys. 
+            We're constantly adding exciting new products to our collection.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals Main Section -->
+    <section class="new-arrivals-main">
+      <div class="container">
+        <!-- Sorting and Filter Options -->
+        <div class="product-filters animate-on-scroll" data-animation="fade-in">
+          <div class="filter-group">
+            <label for="sort-select">Sort By:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="newest">Newest First</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="popularity">Popularity</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="category-select">Category:</label>
+            <select id="category-select" class="category-select">
+              <option value="all">All Categories</option>
+              <option value="Robotics">Robotics</option>
+              <option value="Science Kits">Science Kits</option>
+              <option value="Building Blocks">Building Blocks</option>
+              <option value="RC Toys">RC Toys</option>
+              <option value="Art & Craft">Art & Craft</option>
+              <option value="Board Games">Board Games</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <div class="view-options">
+              <button id="grid-view-btn" class="view-option active" aria-label="Grid view">
+                <i class="fas fa-th"></i>
+              </button>
+              <button id="list-view-btn" class="view-option" aria-label="List view">
+                <i class="fas fa-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured New Arrival -->
+        <div class="featured-new-arrival animate-on-scroll" data-animation="fade-in">
+          <div class="featured-product-container">
+            <div class="featured-product-image">
+              <img src="../images/products/drone.jpg" alt="Mini Drone for Kids">
+              <span class="product-badge badge-new">New</span>
+            </div>
+            <div class="featured-product-content">
+              <h2>Featured New Arrival</h2>
+              <h3>Mini Drone for Kids</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span class="review-count">(56 reviews)</span>
+              </div>
+              <p class="product-description">
+                Introduce children to the exciting world of drones with this easy-to-fly mini drone. 
+                Designed specifically for beginners, it features one-button takeoff/landing, altitude hold, 
+                and a durable crash-resistant design. Includes protective propeller guards for safe indoor flight.
+              </p>
+              <div class="product-price">
+                <span class="current-price">₹1,999</span>
+              </div>
+              <div class="product-features">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li><i class="fas fa-check text-green"></i> One-button takeoff and landing</li>
+                  <li><i class="fas fa-check text-green"></i> Altitude hold for stable flight</li>
+                  <li><i class="fas fa-check text-green"></i> 360° flips and tricks capability</li>
+                  <li><i class="fas fa-check text-green"></i> 10-minute flight time per charge</li>
+                </ul>
+              </div>
+              <button class="btn btn-primary featured-buy-button">
+                <i class="fab fa-whatsapp"></i> Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Arrivals Products Grid -->
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Latest Products</h2>
+        <div class="products-grid" id="new-products-grid">
+          <!-- Products will be loaded here via JavaScript -->
+          <div class="product-loading">Loading new products...</div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter-signup animate-on-scroll" data-animation="slide-up">
+          <div class="newsletter-content">
+            <h3>Never Miss a New Release!</h3>
+            <p>Subscribe to our newsletter to be the first to know about our new arrivals and exclusive offers.</p>
+            <form id="newsletter-form" class="newsletter-form">
+              <input type="email" placeholder="Your email address" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon-section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll" data-animation="slide-up">Coming Soon</h2>
+        <div class="coming-soon-container">
+          <div class="coming-soon-item animate-on-scroll" data-animation="slide-up" data-delay="0.1s">
+            <div class="coming-soon-image">
+              <img src="https://images.unsplash.com/photo-1569775309692-fd5e62248d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Advanced Coding Robot">
+              <div class="coming-soon-badge">Coming Soon</div>
+            </div>
+            <div class="coming-soon-content">
+              <h3>Advanced Coding Robot</h3>
+              <p>A next-generation robot that teaches children advanced coding concepts through fun challenges.</p>
+              <button class="btn btn-outline notify-btn">Notify Me</button>
+            </div>
+          </div>
+          <div class="coming-soon-item animate-on-scroll" data-animation="slide-up" data-delay="0.2s">
+            <div class="coming-soon-image">
+              <img src="https://images.unsplash.com/photo-1631116617822-e100bd7e6e06?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="VR Educational Headset">
+              <div class="coming-soon-badge">Coming Soon</div>
+            </div>
+            <div class="coming-soon-content">
+              <h3>VR Educational Headset</h3>
+              <p>Explore science, history, and geography in immersive 3D with our child-friendly VR headset.</p>
+              <button class="btn btn-outline notify-btn">Notify Me</button>
+            </div>
+          </div>
+          <div class="coming-soon-item animate-on-scroll" data-animation="slide-up" data-delay="0.3s">
+            <div class="coming-soon-image">
+              <img src="https://images.unsplash.com/photo-1567723688475-c21b09157993?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Smart Science Lab Kit">
+              <div class="coming-soon-badge">Coming Soon</div>
+            </div>
+            <div class="coming-soon-content">
+              <h3>Smart Science Lab Kit</h3>
+              <p>A connected science lab with app integration, sensors, and guided experiments for young scientists.</p>
+              <button class="btn btn-outline notify-btn">Notify Me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Balaji<span class="text-secondary">Tech</span></h3>
+          <p>Premium toys that combine learning with fun for your little ones.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=Robotics">Robotics</a></li>
+            <li><a href="products.html?category=Board%20Games">Board Games</a></li>
+            <li><a href="products.html?category=Building%20Blocks">Building Blocks</a></li>
+            <li><a href="products.html?category=RC%20Toys">RC Toys</a></li>
+            <li><a href="products.html?category=Art%20%26%20Craft">Art & Craft</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Contact Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone-alt text-secondary"></i>
+              <a href="tel:+919265736761">+91 92657 36761</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope text-secondary"></i>
+              <a href="mailto:info@balajitech.com">info@balajitech.com</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt text-secondary"></i>
+              <span>123 Main Street, Mumbai, Maharashtra, India - 400001</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Balaji Tech Toys. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Product Details</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-product-details">
+          <!-- Product details will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/common.js"></script>
+  <script src="../js/products-data.js"></script>
+  <script src="../js/new-arrivals.js"></script>
+</body>
+</html>
